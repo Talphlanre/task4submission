@@ -1,0 +1,351 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #61122f;
+  font-family: 'Oxygen', sans-serif;
+}
+
+p{
+	margin: 50px 50px 50px 50px;
+	background-color: #951C49;
+	text-align: center;
+}
+
+/**HEADER**/
+
+#header-nav{
+	background-color: #f6b319;
+	border-radius: 0; /**will make border 0 **/
+	border: 0; /**want to make border 0**/
+
+}
+
+
+.navbar-brand{
+	padding-top: 25px;
+	padding-bottom: 10px;
+	padding-left: 25px;
+
+}
+
+.navbar-brand h1{ /*restaurant name*/
+	font-family: 'Lora', serif;
+	color: #557c3e;/*green*/
+	font-size: 1.5em;/*increase font size*/
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #222;
+	margin-top: 3px;
+	margin-bottom: 15px;
+
+	line-height: .75;/*decrease line height to fit text*/
+	
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus{
+	text-decoration: none;
+} 
+
+
+
+#nav-list{
+	margin-top: 10px;
+}
+
+#nav-list a{
+	color: #951C49;/*slight pink*/
+	text-align: center;
+}
+
+#nav-list a:hover{
+	background:#E7E7E7;/*white*/
+
+}
+
+#nav-list a span{
+	font-size: 1.8em;
+}
+
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+	border:1px solid #61122f; /*bordering the collapsablebutton */
+}
+
+.navbar-header button.navbar-toggle{
+	clear: both;   /*squeeze title david chu's bistro and toggle button when screen size is less*/
+	margin-top:-30px;
+}
+
+/*END OF HEADER*/
+
+/*HOME PAGE*/
+.container .jumbotron{
+    box-shadow: 0 0 50px #3F0C1F;
+	border: 2px solid #3F0C1F;
+}
+
+/*
+#menu-tile, #specials tile{
+	width:360px;
+	margin: 0 auto 15px;
+}
+
+
+
+#menu-tile,#specials-tile,#map-tile{
+		height: 250px;
+		width: 100%;
+		margin-bottom: 15px;
+		position: relative;will not move anywhere but will place an anchor for its child element 
+		border: 2px solid #3F0C1F;
+		overflow: hidden;
+	}
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover{
+	box-shadow: 0 1px 5px 1px #cccccc; grey shadow around picture so that user comes to know when he rolls his mouse around it
+}
+
+#menu-tile{
+	background: url('../menu-tile.jpg');
+	background-position: center;
+}
+
+#specials-tile{
+	background:url('../specials-tile.jpg');
+	background-position: center;
+}
+
+/*#menu-tile span,#specials-tile span, #map-tile span{  applicable to span inside map tile, specials tile and menu tile 
+	position: absolute;
+	bottom: 0px;
+	right:0px;
+	width:100%;
+	text-align:center;
+	font-size: 1.6em;
+	text-transform: uppercase;
+	background-color: #000;
+	color:#fff;
+	opacity: .8;
+}*/
+/*END OF HOME PAGE*/
+
+/*MENU CATEGORIES PAGE*/
+.category-tile{
+	position:relative;
+	border:2px solid #3F0C1F;
+	overflow:hidden;
+	width:200px;
+	height:200px;
+	margin:0 auto 15px;
+}
+
+.category-tile span{
+	position: absolute;
+	bottom: 0;
+	right:0;
+	width:100%;
+	text-align: center;
+	font-size: 1.2em;
+	text-transform: uppercase;
+}
+
+.category-title:hover{ /*visual*/
+	box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-categories-title + div{/*next sibling of same parent*/
+	margin-bottom: 50px;
+}
+/*END OF MENU CATEGORIES PAGE*/
+
+/*SINGLE CATEGORY PAGE*/
+.menu-item-tile{
+	margin-bottom: 25px;
+}
+
+.menu-item-tile hr{
+	width: 80%;
+}
+
+.menu-item-tile .menu-item-price{ 
+	font-size: 1.1em;
+	text-align: right;
+	margin-top: -15px;
+	margin-right: -15px;
+}
+
+.menu-item-tile .menu-item-price span{
+	font-size: .6em;
+}
+
+.menu-item-photo{
+	position: relative;
+	border:2px solid #3F0C1F;/*maroon border*/
+	overflow: hidden;
+	padding: 0;
+	margin-right: -15px;
+	margin-left: auto;
+	margin-bottom: 20px;
+	max-width: 250px;
+}
+
+.menu-item-photo div{
+	position: absolute;
+	bottom: 0;
+	right:0;
+	width: 80px;
+	background-color: #557C3E;
+	text-align: center;
+}
+
+.menu-item-description{
+	padding-right: 30px;
+}
+
+h3.menu-item-title{
+	margin:0 0 10px;
+}
+
+.menu-item-details{
+	font-size: .9em;
+	font-style: italic;
+}
+
+
+
+
+
+/*Large devices only*/
+@media(min-width: 1200px){
+	.container .jumbotron{
+		
+		height: 1000px;
+	}
+}
+
+/*Medium devices only*/
+@media(min-width: 992px) and (max-width: 1199px){
+	
+	/*Home Page*/
+	.container .jumbotron{
+		/*background:url('../jumbotron_992.jpg') no-repeat;*/
+		height: 1000px;
+	}
+	/*End of home page*/
+}
+
+/*Small devices only*/
+@media(min-width: 768px) and (max-width: 991px){
+	/*Home Page*/
+
+	.navbar-brand{
+		height: 80px;
+		padding-top: 40px;
+		font-size: 3vw;
+		margin-left: 5px;
+		padding-left: 30px;
+
+	}
+
+	.container .jumbotron{
+		/*background:url('../jumbotron_768.jpg') no-repeat;*/
+		height: 1000px;
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-bottom:10px;
+	}
+
+	
+}   /*End of Home Page*/
+
+
+/*Extra small devices only*/
+@media(max-width:767px){
+	/*HEADER*/
+	.navbar-brand{
+		padding-top: 40px;
+		font-size: 8vw;
+		height:80px;
+	}
+
+	.navbar-brand h1{/*Restaurant name*/
+		padding-top: 10px;
+		font-size: 6vw; /*1vw=1% of viewport width we use because they are responsive*/
+	}
+
+	
+
+ 	
+
+ 	#collapsable-nav a{/*collapsed new menu glyph*/
+ 		font-size: 1.2em; /*increase font by 20% */
+ 	}
+
+ 	#collapsable-nav a span{
+ 		font-size:1em;
+ 		margin-right: 5px;
+ 	}
+ 	#call-btn>a{
+ 		font-size: 1.5em;
+ 		display: block;
+ 		margin: 0 20px;
+ 		padding: 10px;
+ 		border: 2px solid #fff;
+ 		background-color: #f6b319;
+ 		color: #951c49;
+ 	}
+
+ 	#xs-deliver{
+ 		margin-top: 5px;
+ 		font-size: .7em;
+ 		letter-spacing: .1em;
+ 		text-transform: uppercase;
+ 	}
+ 	/*End of Header
+	
+
+ 	/*Home Page*/
+ 	.container  .jumbotron{
+ 		margin-top: 50px;
+ 		padding: 0;
+ 		border-top-width: 0; 		
+	}
+
+	
+
+	.menu-item-tile .menu-item-price{
+		text-align: center;
+	}
+	.menu-item-description{
+		text-align: center;
+	}
+}
+
+
+/*Very small devices like iphone4*/
+@media(max-width: 479px){
+	/*Home Page*/
+	.navbar-brand h1{/*Restaurnat name*/
+		padding-top: 18px;
+		font-size: 8vw
+
+	}
+	#menu-tile,#specials-tile{
+		width: 280px;
+		margin:0 auto 15px;
+	}
+
+	.col-xxs-12{
+		position:relative;
+		min-height:1px;
+		padding-right: 15px;
+		padding-left: 15px;
+		float: left;
+		width: 100%
+	}
+
+}
+
+
+
+
+
