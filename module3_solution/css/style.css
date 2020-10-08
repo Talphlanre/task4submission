@@ -1,0 +1,49 @@
+#content-chicken,
+#content-beef,
+#content-sushi {
+  width: auto;
+  height: auto;
+  background-color: rgb(212, 170, 170);
+  margin-top: 15px;
+}
+
+#content {
+  margin-top: 20px;
+}
+#parrafo {
+  padding: 10px;
+  font-weight: bold;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+#content-chicken > h3,
+#content-beef > h3,
+#content-sushi > h3 {
+  padding-top: 12px;
+}
+
+@media (max-width: 767px) {
+  div > #content-chicken,
+  div > #content-beef,
+  div > #content-sushi {
+    margin: 20px 40px 40px 40px;
+  }
+}
+
+ul li a {
+  border-top: 1px solid black;
+  font-weight: bold;
+  color: black;
+}
+
+nav {
+  border: 1px solid black;
+}
+nav .navbar-brand {
+  font-family: "Secular One", sans-serif;
+  font-size: 20px;
+}
+.my-bg {
+  background-color: darkgray;
+}
